@@ -1,0 +1,18 @@
+<library>
+    <book>
+        <title>XML Crash Course</title>
+        <author>Tabitha Kihara </author>
+    </book>
+    <book>
+        <title>JavaScript: The Good Parts</title>
+        <author>Sammy Karura</author>
+    </book>
+      <book>
+    <title>Python: The Good Parts</title>
+        <author>Celila Nanfuka</author>
+    </book>
+      <book>
+     <title>Compiler: The Good Parts</title>
+        <author>Andrew Yotui</author>
+     </book>
+</library>

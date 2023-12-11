@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Travel Reservation Form</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			background-color: #fff;
+			color: #333;
+			width: 500px;
+		}
+
+		h1 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		input[type="text"], input[type="email"], select, textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.note {
+			margin-top: 20px;
+			font-size: 14px;
+			color: #999;
+			text-align: center;
+		}
+        terms-container {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        label {
+            margin-right: 20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .terms-container {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        label {
+            margin-right: 20px;
+        }
+	</style>
+</head>
+<body>
+	<form>
+		<h1>Travel Reservation Form</h1>
+		<label for="full-name">Full Name*:</label>
+        <select id="full-name" name="full-name" required>
+            <option value="">FirstName LastName</option> 
+        </select>
+        
+
+		<label for="email">Email Address*:</label>
+        <select id="email" name="email" required>
+            <option value="">EMAIL_ADDRESS</option>  
+        </select>
+       
+
+        <label for="tour-package">Select Tour Package*:</label>
+		<select id="tour-package" name="tour-package" required>
+			<option value="">GOA</option>
+			<option value="package-1">Package 1</option>
+			<option value="package-2">Package 2</option>
+			<option value="package-3">Package 3</option>
+		</select>
+
+		<label for="arrival-date">Arrival Date*:</label>
+		<input type="date" id="arrival-date" name="arrival-date" required>
+
+		<label for="number-of-persons">Number of Persons:</label>
+		<input type="number" id="number-of-persons" name="number-of-persons" min="1" max="10" required>
+
+		<label for="what-would-you-want-to-avail">What would you want to avail?*</label>
+		<input type="checkbox" id="boarding" name="boarding" value="boarding">
+		<label for="boarding">Boarding</label>
+		<input type="checkbox" id="fooding" name="fooding" value="fooding">
+		<label for="fooding">Fooding</label>
+		<input type="checkbox" id="sightseeing" name="sightseeing" value="sightseeing">
+		<label for="sightseeing">Sightseeing</label>
+		<label for="discount-coupon-code">Discount Coupon Code</label>
+		<input type="text" id="discount-coupon-code" name="discount-coupon-code">
+
+        <body>
+            <label for="terms-and-conditions">Terms and Conditions*</label>
+          
+            <div class="terms-container">
+                <input type="checkbox" id="terms-and-conditions-1">
+                <label for="terms-and-conditions-1">I Agree</label>
+                <label for="terms-and-conditions-1">I Disagree</label>
+            </div>
+        </body>
+		
+
+		<input type="submit" value="complete reservations">
+	</form>
+
+</body>
+</html>
